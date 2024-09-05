@@ -12,11 +12,11 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 function Sidebar() {
   return (
-    <Box  flex={1} p={2} 
-    // remove the display the sidebar on the small screen mobile
+    <Box  
+    flex={1} p={2}
     sx={{display: {xs:"none",sm:"block"}} }  
     >
-      
+      <Box position="fixed" >
     
       
       <List>
@@ -89,7 +89,7 @@ function Sidebar() {
       
       
       
-      
+        </Box>
       
       </Box>
   )
