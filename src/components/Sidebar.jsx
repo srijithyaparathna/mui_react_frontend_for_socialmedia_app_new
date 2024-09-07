@@ -1,98 +1,97 @@
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
-import React from 'react'
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
-import HomeIcon from '@mui/icons-material/Home';
-import ArticleIcon from '@mui/icons-material/Article';
-import GroupsIcon from '@mui/icons-material/Groups';
-import StorefrontIcon from '@mui/icons-material/Storefront';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import SettingsIcon from '@mui/icons-material/Settings';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-function Sidebar() {
+import {
+  AccountBox,
+  Article,
+  Group,
+  Home,
+  ModeNight,
+  Person,
+  Settings,
+  Storefront,
+} from "@mui/icons-material";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Switch,
+} from "@mui/material";
+import React from "react";
+
+const Sidebar = ({mode,setMode}) => {
   return (
-    <Box  
-    flex={1} p={2}
-    sx={{display: {xs:"none",sm:"block"}} }  
-    >
-      <Box position="fixed" >
-    
-      
-      <List>
+    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+      <Box position="fixed">
+        <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href='#home' >
+            <ListItemButton component="a" href="#home">
               <ListItemIcon>
-                <HomeIcon/>
+                <Home />
               </ListItemIcon>
               <ListItemText primary="Homepage" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <ArticleIcon />
+                <Article />
               </ListItemIcon>
-              <ListItemText primary="page" />
+              <ListItemText primary="Pages" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <GroupsIcon />
+                <Group />
               </ListItemIcon>
               <ListItemText primary="Groups" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <StorefrontIcon />
+                <Storefront />
               </ListItemIcon>
               <ListItemText primary="Marketplace" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <PersonAddIcon />
+                <Person />
               </ListItemIcon>
               <ListItemText primary="Friends" />
             </ListItemButton>
-          </ListItem><ListItem disablePadding>
-            <ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <SettingsIcon />
+                <Settings />
               </ListItemIcon>
               <ListItemText primary="Settings" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <AccountBoxIcon />
+                <AccountBox />
               </ListItemIcon>
               <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <DarkModeIcon />
+                <ModeNight />
               </ListItemIcon>
-              <Switch></Switch>
+              <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
         </List>
-      
-      
-      
-      
-      
-        </Box>
-      
       </Box>
-  )
-}
+    </Box>
+  );
+};
 
-export default Sidebar
+export default Sidebar;
