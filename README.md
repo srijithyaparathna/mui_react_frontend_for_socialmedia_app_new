@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# MUI React Frontend for Social Media App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a responsive social media frontend built with **React** and **Material UI** (MUI), offering a sleek and modern user interface for social interactions. The app features a dynamic feed, user profiles, notifications, and post creation functionalities, making it a robust solution for building a scalable social media platform.
 
-## Available Scripts
+## Features:
+- **User Authentication**: Secure login and registration flow with JWT.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop views using MUI’s responsive layout utilities.
+- **Post Creation & Feed**: Users can create text and image posts, which are displayed in a dynamic feed with like, comment, and share features.
+- **User Profiles**: View and edit user profiles with detailed information, including profile pictures and bio.
+- **Follow System**: Users can follow and unfollow others, with a feed tailored to show posts from followed users.
+- **Notifications**: Real-time notifications for likes, comments, follows, and mentions.
+- **Dark Mode**: Full support for dark and light themes, using MUI’s theme provider.
 
-In the project directory, you can run:
+## Tech Stack:
+- **React**: Frontend framework for building interactive UIs.
+- **Material UI (MUI)**: React component library for building responsive and accessible UIs.
+- **Axios**: For handling API requests to the backend.
+- **React Router**: Client-side routing for seamless navigation.
+- **Context API/Redux**: State management for user authentication and global app state.
+![image](https://github.com/user-attachments/assets/8f5a65c8-d606-4021-b730-b3de4a9c3483)
+![image](https://github.com/user-attachments/assets/c3282dd3-eaca-41f6-9c03-4b91f32ebf2e)
 
-### `npm start`
+## Getting Started:
+1. Clone the repo:
+    ```bash
+    git clone https://github.com/yourusername/mui-react-socialmedia-app.git
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/user-attachments/assets/28d3be8b-25f6-4ee1-b9bf-18551960045d)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/user-attachments/assets/01a77dbe-3fd8-4e4c-afcf-48c259ade681)
 
-### `npm test`
+## Contributing:
+Pull requests and contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding!
