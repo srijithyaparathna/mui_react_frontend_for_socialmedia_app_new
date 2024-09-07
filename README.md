@@ -1,4 +1,4 @@
-# MUI React Frontend for Social Media App
+# MUI React Frontend for Social Media App FrontEnd
 
 This project is a responsive social media frontend built with **React** and **Material UI** (MUI), offering a sleek and modern user interface for social interactions. The app features a dynamic feed, user profiles, notifications, and post creation functionalities, making it a robust solution for building a scalable social media platform.
 
@@ -16,7 +16,7 @@ This project is a responsive social media frontend built with **React** and **Ma
 - **Material UI (MUI)**: React component library for building responsive and accessible UIs.
 - **Axios**: For handling API requests to the backend.
 - **React Router**: Client-side routing for seamless navigation.
-- **Context API/Redux**: State management for user authentication and global app state.
+
 ![image](https://github.com/user-attachments/assets/8f5a65c8-d606-4021-b730-b3de4a9c3483)
 ![image](https://github.com/user-attachments/assets/c3282dd3-eaca-41f6-9c03-4b91f32ebf2e)
 
